@@ -1,2 +1,2 @@
 # new-psx-project
-Base PsyQ and Nugget project to copy.
+Base PsyQ and Nugget project to download and modify.
