@@ -5,9 +5,29 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "preLaunchTask": "Launch-PCSX-Redux",
             "type": "gdb",
             "request": "attach",
-            "name": "(gdb) Launch Hello World",
+            "name": "(gdb) Launch main.c and emulator",
+            "target": "localhost:3333",
+            "remote": true,
+            "stopAtConnect": true,
+            "executable": "./main.elf",   // Change debug executable file
+            "gdbpath": "/usr/bin/gdb-multiarch",
+            "cwd": "${workspaceRoot}",
+            "autorun": [
+                "set substitute-path /project .",
+                "monitor reset shellhalt",
+                "load ./main.elf",        // Match "executable"
+                "tbreak main",
+                "continue",
+            ],
+            "valuesFormatting": "parseText"
+        },
+        {
+            "type": "gdb",
+            "request": "attach",
+            "name": "(gdb) Launch main.c only",
             "target": "localhost:3333",
             "remote": true,
             "stopAtConnect": true,

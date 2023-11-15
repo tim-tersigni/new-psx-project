@@ -16,7 +16,7 @@
     "8Megs": false,
     "AutoUpdate": false,
     "AutoVideo": true,
-    "Bios": "/tmp/.mount_pcsx-rK4DWkg/usr/bin/../share/pcsx-redux/resources/openbios.bin",
+    "Bios": "/tmp/.mount_pcsx-rHBvPMa/usr/bin/../share/pcsx-redux/resources/openbios.bin",
     "BiosPath": "",
     "BnWMdec": false,
     "Debug": {
@@ -147,9 +147,9 @@
     "VRAMEditorAddr": 0,
     "WidescreenRatio": false,
     "WindowPosX": 1288,
-    "WindowPosY": 85,
+    "WindowPosY": 745,
     "WindowSizeX": 1256,
-    "WindowSizeY": 1267
+    "WindowSizeY": 607
   },
   "imgui": "[Window][Debug##Default]\nPos=60,60\nSize=400,400\nCollapsed=0\n\n[Window][Update configuration]\nPos=10,20\nSize=389,272\nCollapsed=0\n\n[Window][Emulation Configuration]\nPos=50,30\nSize=300,500\nCollapsed=0\n\n[Window][Notification]\nPos=10,20\nSize=304,96\nCollapsed=0\n\n[Docking][Data]\n\n",
   "loggers": {
