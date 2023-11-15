@@ -8,7 +8,7 @@ Base PsyQ and Nugget project to download and modify.
 
 ## Setup
 ### [Download](https://github.com/tim-tersigni/new-psx-project/archive/refs/heads/main.zip) the Project
-### Install the PsyQ Converted Libraries
+### Install PsyQ Converted Libraries
 1. ```cd``` to the project's root directory
 2. ```wget http://psx.arthus.net/sdk/Psy-Q/psyq-4.7-converted-full.7z && 7z x psyq-4.7-converted-full.7z -o./psyq```
 ### Install MIPS Toolchain:
