@@ -49,7 +49,7 @@ sudo apt install gdb-multiarch
 # 'gdb-multiarch' is available in aur : https://aur.archlinux.org/packages/gdb-multiarch/
 sudo trizen -S gdb-multiarch
 ```
-### Update your ```gbdpath```
+### Update your gbdpath
 - If the path to ```gbd-multiarch``` is not ```"/usr/bin/gdb-multiarch"```, update ```"gbdpath"``` in ```.vscode/launch.json``` accordingly.
 ### Setup VS Code and Native Debug Extension
 - Install the ```Native debug``` extension: [https://marketplace.visualstudio.com/items?itemName=webfreak.debug](https://marketplace.visualstudio.com/items?itemName=webfreak.debug).
