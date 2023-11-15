@@ -19,9 +19,9 @@ mv new-psx-project-main new-psx-project
 1. ```cd``` to the project's root directory.
 2. ```wget http://psx.arthus.net/sdk/Psy-Q/psyq-4.7-converted-full.7z && 7z x psyq-4.7-converted-full.7z -o./psyq```
 ### Install MIPS Toolchain:
-#### Debian (Ubuntu, Mint, Pop!\_OS...)
+#### Debian based
 ```sudo apt-get install gcc-mipsel-linux-gnu g++-mipsel-linux-gnu binutils-mipsel-linux-gnu```
-#### Arch
+#### Arch based
 On Arch derivatives (Manjaro), the mipsel environment can be installed from AUR : cross-mipsel-linux-gnu-binutils and cross-mipsel-linux-gnu-gcc using our AURhelper of choice:
 ```trizen -S cross-mipsel-linux-gnu-binutils cross-mipsel-linux-gnu-gcci```
 ### PCSX-Redux Emulator Setup:
@@ -37,6 +37,18 @@ On Arch derivatives (Manjaro), the mipsel environment can be installed from AUR 
 ---
 
 ## Debugging
+Taken from: [https://pcsx-redux.consoledev.net/Debugging/gdb-server/](https://pcsx-redux.consoledev.net/Debugging/gdb-server/)
+### Install GBD Multiarch
+#### Debian based
+```
+sudo apt install gdb-multiarch
+```
+#### Arch based
+`# 'gdb-multiarch' is available in aur : https://aur.archlinux.org/packages/gdb-multiarch/
+sudo trizen -S gdb-multiarch
+```
+### Update your ```gbdpath```
+- If the path to ```gbd-multiarch``` is not ```"/usr/bin/gdb-multiarch"```, update ```"gbdpath"``` in ```.vscode/launch.json``` accordingly.
 ### Setup VS Code and Native Debug Extension
 - Install the ```Native debug``` extension: [https://marketplace.visualstudio.com/items?itemName=webfreak.debug](https://marketplace.visualstudio.com/items?itemName=webfreak.debug).
 - ```./vscode/launch.json``` contains our debug configs. Info: [https://pcsx-redux.consoledev.net/Debugging/gdb-server/](https://pcsx-redux.consoledev.net/Debugging/gdb-server/).
