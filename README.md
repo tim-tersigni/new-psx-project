@@ -9,7 +9,7 @@ Base PsyQ and Nugget project to download and modify.
 ## Setup
 ### [Download](https://github.com/tim-tersigni/new-psx-project/archive/refs/heads/main.zip) the Project
 ### Install PsyQ Converted Libraries
-1. ```cd``` to the project's root directory
+1. ```cd``` to the project's root directory.
 2. ```wget http://psx.arthus.net/sdk/Psy-Q/psyq-4.7-converted-full.7z && 7z x psyq-4.7-converted-full.7z -o./psyq```
 ### Install MIPS Toolchain:
 #### Debian (Ubuntu, Mint, Pop!\_OS...)
@@ -24,18 +24,18 @@ On Arch derivatives (Manjaro), the mipsel environment can be installed from AUR 
 - ```.vscode/launch.json``` starts the emulator using the command ```pcsx-redux```.
 - Use the same command name or update ```.vscode/tasks.json``` for VS Code debugging.
 ### Test our setup
-1. Type ```make``` in the terminal from the project's root directory
-2. Run the executable with ```pcsx-redux -run -exe main.elf``` 
+1. Type ```make``` in the terminal from the project's root directory.
+2. Run the executable with ```pcsx-redux -run -exe main.elf```.
 3. The emulator should display purple when project is run.
 ---
 
 ## Debugging
 ### Setup VS Code and Native Debug Extension
-- Install the ```Native debug``` extension: [https://marketplace.visualstudio.com/items?itemName=webfreak.debug](https://marketplace.visualstudio.com/items?itemName=webfreak.debug)
+- Install the ```Native debug``` extension: [https://marketplace.visualstudio.com/items?itemName=webfreak.debug](https://marketplace.visualstudio.com/items?itemName=webfreak.debug).
 - ```./vscode/launch.json``` contains our debug configs. Info: [https://pcsx-redux.consoledev.net/Debugging/gdb-server/](https://pcsx-redux.consoledev.net/Debugging/gdb-server/).
 - Choose whether ```PCSX-Redux``` automatically starts alongside the debugger by switching VS Code debug configurations.
 ### PCSX-Redux Configuration
 - GBD server and debugging are enabled automatically for ```PCSX-Redux``` using ```./pcsx.json```. Dynarec is disabled for CPU debugging. These settings and others are configured there.
 ### More Debugging Tools and Methods
-- ```PCSX-Redux``` is capable of connecting to other GBD clients and has strong debugging capabilities. Info: [https://pcsx-redux.consoledev.net/Debugging/introduction/](https://pcsx-redux.consoledev.net/Debugging/introduction/)
+- ```PCSX-Redux``` is capable of connecting to other GBD clients and has strong debugging capabilities. Info: [https://pcsx-redux.consoledev.net/Debugging/introduction/](https://pcsx-redux.consoledev.net/Debugging/introduction/).
 
