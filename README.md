@@ -20,7 +20,7 @@ On Arch derivatives (Manjaro), the mipsel environment can be installed from AUR 
 ### PCSX-Redux Emulator Setup:
 #### Install:
 [https://github.com/grumpycoders/pcsx-redux](https://github.com/grumpycoders/pcsx-redux)
-#### PCSX-Redux Command Name:
+#### Set PCSX-Redux Command Name:
 - ```.vscode/launch.json``` starts the emulator using the command ```pcsx-redux```.
 - Use the same command name or update ```.vscode/tasks.json``` for VS Code debugging.
 ### Test our setup
