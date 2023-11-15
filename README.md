@@ -34,6 +34,7 @@ On Arch derivatives (Manjaro), the mipsel environment can be installed from AUR 
 1. Type ```make``` in the terminal from the project's root directory.
 2. Run the executable with ```pcsx-redux -run -exe main.elf```.
 3. The emulator should display purple when project is run.
+
 ---
 
 ## Debugging
@@ -44,7 +45,8 @@ Taken from: [https://pcsx-redux.consoledev.net/Debugging/gdb-server/](https://pc
 sudo apt install gdb-multiarch
 ```
 #### Arch based
-`# 'gdb-multiarch' is available in aur : https://aur.archlinux.org/packages/gdb-multiarch/
+```
+# 'gdb-multiarch' is available in aur : https://aur.archlinux.org/packages/gdb-multiarch/
 sudo trizen -S gdb-multiarch
 ```
 ### Update your ```gbdpath```
