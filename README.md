@@ -8,6 +8,13 @@ My base PsyQ and Nugget project to create new projects with.
 
 ## Setup
 ### [Download](https://github.com/tim-tersigni/new-psx-project/archive/refs/heads/main.zip) and Unzip the Project
+#### Bash command to download and unzip
+```
+wget -O new-psx-project.zip https://github.com/tim-tersigni/new-psx-project/archive/refs/heads/main.zip && 
+unzip new-psx-project.zip && 
+rm new-psx-project.zip && 
+mv new-psx-project-main new-psx-project
+```
 ### Install PsyQ Converted Libraries
 1. ```cd``` to the project's root directory.
 2. ```wget http://psx.arthus.net/sdk/Psy-Q/psyq-4.7-converted-full.7z && 7z x psyq-4.7-converted-full.7z -o./psyq```
@@ -21,9 +28,9 @@ On Arch derivatives (Manjaro), the mipsel environment can be installed from AUR 
 #### Install:
 [https://github.com/grumpycoders/pcsx-redux](https://github.com/grumpycoders/pcsx-redux)
 #### Set PCSX-Redux Command Name:
-- ```.vscode/launch.json``` starts the emulator using the command ```pcsx-redux```.
-- Use the same command name or update ```.vscode/tasks.json``` for VS Code debugging.
-### Test our setup
+- Ensure ```PCSX-Redux``` can be launched with ```pcsx-redux -stdout``` from the terminal.
+- If not, update ```.vscode/tasks.json``` or the included debug config will not work.
+### Test your setup
 1. Type ```make``` in the terminal from the project's root directory.
 2. Run the executable with ```pcsx-redux -run -exe main.elf```.
 3. The emulator should display purple when project is run.
