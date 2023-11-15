@@ -1,7 +1,7 @@
 # new-psx-project
 ## About
 Base PsyQ and Nugget project to download and modify.
-- Configured to debug using ```PCSX-Redux```'s GDB server and VS Code and the Native Debug extension.
+- Configured to debug using ```PCSX-Redux```'s GDB server and VS Code with the Native Debug extension.
 - Based on [https://github.com/ABelliqueux/nolibgs_hello_worlds](https://github.com/ABelliqueux/nolibgs_hello_worlds) and Lameguy64's Hello World.
 
 ---
