@@ -20,7 +20,7 @@ mv new-psx-project-main new-psx-project
 2. ```wget http://psx.arthus.net/sdk/Psy-Q/psyq-4.7-converted-full.7z && 7z x psyq-4.7-converted-full.7z -o./psyq```
 ### Install MIPS Toolchain:
 #### Debian (Ubuntu, Mint, Pop!\_OS...)
-```sudo apt-get install gcc-mipsel-linux-gnu g++-mipsel-linux-gnu binutils-mipsel-linux-gnui```
+```sudo apt-get install gcc-mipsel-linux-gnu g++-mipsel-linux-gnu binutils-mipsel-linux-gnu```
 #### Arch
 On Arch derivatives (Manjaro), the mipsel environment can be installed from AUR : cross-mipsel-linux-gnu-binutils and cross-mipsel-linux-gnu-gcc using our AURhelper of choice:
 ```trizen -S cross-mipsel-linux-gnu-binutils cross-mipsel-linux-gnu-gcci```
