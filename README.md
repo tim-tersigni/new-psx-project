@@ -1,7 +1,8 @@
 # new-psx-project
+## About
 Base PsyQ and Nugget project to download and modify.
-- GDB server enabled and ready for VS Code attachment.
-- Screen should turn purple when project is run.
+- Configured to debug using ```PCSX-Redux```'s GDB server and VS Code and the Native Debug extension.
+- Based on [https://github.com/ABelliqueux/nolibgs_hello_worlds](https://github.com/ABelliqueux/nolibgs_hello_worlds) and Lameguy64's Hello World.
 
 ---
 
@@ -24,7 +25,7 @@ On Arch derivatives (Manjaro), the mipsel environment can be installed from AUR 
 ### Test our setup
 1. Type ```make``` in the terminal from the project's root directory
 2. Run the executable with ```pcsx-redux -run -exe main.elf``` 
-
+3. The emulator should display purple when project is run.
 ---
 
 ## Debugging
